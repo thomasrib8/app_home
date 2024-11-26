@@ -3,8 +3,8 @@ function login() {
     const password = document.getElementById('password').value;
 
     // Définitions des identifiants valides
-    const validUsername = "3monkeys";
-    const validPassword = "application";
+    const validUsername = "admin";
+    const validPassword = "3monkeys";
 
     if (username === validUsername && password === validPassword) {
         // Afficher le contenu principal et cacher l'écran de connexion
