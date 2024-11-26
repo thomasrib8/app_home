@@ -2,20 +2,21 @@ function login() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    // Définez ici le nom d'utilisateur et le mot de passe
-    const validUsername = "admin";
-    const validPassword = "Roue2021*";
+    // Définitions des identifiants valides
+    const validUsername = "3monkeys";
+    const validPassword = "application";
 
     if (username === validUsername && password === validPassword) {
-        // Affiche le contenu principal
+        // Afficher le contenu principal et cacher l'écran de connexion
         document.getElementById('login-screen').style.display = 'none';
         document.getElementById('main-content').style.display = 'block';
     } else {
-        // Affiche un message d'erreur
+        // Afficher un message d'erreur
         document.getElementById('error-message').style.display = 'block';
     }
 }
 
 function launchApp(url) {
+    // Ouvre l'URL dans une nouvelle fenêtre ou un nouvel onglet
     window.open(url, '_blank');
 }
