@@ -7,21 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Logo centré -->
-        <img src="logo.svg" alt="Logo 3 Monkeys" class="logo">
+    <div id="login-screen">
+        <h1>Connexion</h1>
+        <input type="text" id="username" placeholder="Nom d'utilisateur">
+        <input type="password" id="password" placeholder="Mot de passe">
+        <button onclick="login()">Se connecter</button>
+        <p id="error-message" style="color: red; display: none;">Nom d'utilisateur ou mot de passe incorrect</p>
+    </div>
 
-        <!-- Titre -->
-        <h1>App Traduction</h1>
-
-        <!-- Boutons -->
-        <div class="buttons">
-            <button onclick="launchApp('https://calculette-traduction-3-monkeys.onrender.com')">Calculette</button>
-            <button onclick="launchApp('https://three-monkeys-traduction.onrender.com')">Traduction</button>
+    <div id="main-content" style="display: none;">
+        <div class="container">
+            <img src="logo.svg" alt="Logo 3 Monkeys" class="logo">
+            <h1>App Traduction</h1>
+            <div class="buttons">
+                <button onclick="launchApp('https://calculette-traduction-3-monkeys.onrender.com')">Calculette</button>
+                <button onclick="launchApp('https://three-monkeys-traduction.onrender.com')">Traduction</button>
+            </div>
+            <p class="footer">©3 Monkeys Publishing, all right reserved</p>
         </div>
-
-        <!-- Texte en bas -->
-        <p class="footer">©3 Monkeys Publishing, all right reserved</p>
     </div>
 
     <script src="script.js"></script>
