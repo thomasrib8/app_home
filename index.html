@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="login-screen">
+    <!-- Écran de connexion -->
+    <div class="login-container" id="login-screen">
         <h1>Connexion</h1>
         <input type="text" id="username" placeholder="Nom d'utilisateur">
         <input type="password" id="password" placeholder="Mot de passe">
@@ -15,15 +16,24 @@
         <p id="error-message" style="color: red; display: none;">Nom d'utilisateur ou mot de passe incorrect</p>
     </div>
 
-    <div id="main-content" style="display: none;">
-        <div class="container">
-            <img src="logo.svg" alt="Logo 3 Monkeys" class="logo">
+    <!-- Conteneur principal (caché par défaut) -->
+    <div class="container" id="main-content" style="display: none;">
+        <!-- Logo centré -->
+        <img src="logo.svg" alt="Logo 3 Monkeys" class="logo">
+
+        <!-- Conteneur de contenu principal -->
+        <div class="content">
+            <!-- Titre -->
             <h1>App Traduction</h1>
+
+            <!-- Boutons -->
             <div class="buttons">
                 <button onclick="launchApp('https://calculette-traduction-3-monkeys.onrender.com')">Calculette</button>
                 <button onclick="launchApp('https://three-monkeys-traduction.onrender.com')">Traduction</button>
             </div>
-            <p class="footer">©3 Monkeys Publishing, all right reserved</p>
+
+            <!-- Texte en bas -->
+            <p class="footer">©3 Monkeys Publishing, all rights reserved</p>
         </div>
     </div>
 
