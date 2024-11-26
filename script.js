@@ -4,7 +4,7 @@ function login() {
 
     // Définitions des identifiants valides
     const validUsername = "admin";
-    const validPassword = "3monkeys";
+    const validPassword = "Roue2021*";
 
     if (username === validUsername && password === validPassword) {
         // Afficher le contenu principal et cacher l'écran de connexion
